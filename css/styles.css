@@ -673,3 +673,227 @@ img {
     color: var(--color-texto-secundario);
     font-size: 0.8rem;
 }
+
+
+/* =================================
+   TABLET - 768px
+================================= */
+
+@media (min-width: 768px) {
+
+    /* HEADER */
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.5rem 2.5rem;
+    }
+
+    .navbar ul {
+        gap: 0.5rem;
+    }
+
+    /* HERO */
+
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 3rem 2.5rem;
+        gap: 3rem;
+    }
+
+    .hero-content {
+        align-items: flex-start;
+        flex: 1;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-image img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    /* SOBRE MÍ */
+
+    .about,
+    .skills,
+    .projects,
+    .education,
+    .contact {
+        padding: 4rem 2.5rem;
+    }
+
+    .about-content,
+    .skills-content,
+    .projects-content,
+    .education-content,
+    .contact-content {
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+
+    /* PROYECTOS */
+
+    .project-image img {
+        height: 14rem;
+    }
+
+    /* CONTACTO */
+
+    .contact-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contact-item {
+        flex: 1 1 13rem;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        padding: 3rem 2.5rem;
+    }
+
+}
+
+
+/* =================================
+   DESKTOP - 1200px
+================================= */
+
+@media (min-width: 1200px) {
+
+    /* HEADER */
+
+    .header {
+        padding: 1.5rem 4rem;
+    }
+
+    .navbar ul {
+        gap: 1rem;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+    }
+
+    /* HERO */
+
+    .hero {
+        max-width: 75rem;
+        min-height: 65svh;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+        gap: 5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-image img {
+        width: 19rem;
+        height: 19rem;
+    }
+
+    /* SOBRE MÍ */
+
+    .about {
+        padding: 5rem 2rem;
+    }
+
+    .about-content {
+        max-width: 55rem;
+    }
+
+    .about-content h2,
+    .skills-content h2,
+    .projects-content h2,
+    .education-content h2,
+    .contact-content h2 {
+        font-size: 2.2rem;
+    }
+
+    /* HABILIDADES */
+
+    .skills {
+        padding: 5rem 2rem;
+    }
+
+    .skills-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+    }
+
+    .skills-content h2,
+    .skills-description {
+        grid-column: 1 / -1;
+    }
+
+    /* PROYECTOS */
+
+    .projects {
+        padding: 5rem 2rem;
+    }
+
+    .projects-content {
+        max-width: 75rem;
+    }
+
+    .projects-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .project-card {
+        transition: transform 0.3s ease,
+                    border-color 0.3s ease;
+    }
+
+    .project-card:hover {
+        transform: translateY(-0.3rem);
+        border-color: var(--color-primario);
+    }
+
+    /* FORMACIÓN */
+
+    .education {
+        padding: 5rem 2rem;
+    }
+
+    .education-content {
+        max-width: 55rem;
+    }
+
+    /* CONTACTO */
+
+    .contact {
+        padding: 5rem 2rem;
+    }
+
+    .contact-content {
+        max-width: 65rem;
+    }
+
+    .contact-links {
+        flex-wrap: nowrap;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        padding: 3rem 4rem;
+    }
+
+}
